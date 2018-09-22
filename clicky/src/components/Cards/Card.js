@@ -5,7 +5,7 @@ import "./Card.css";
 const Cards = props => (
   <div className="card">
     <div className="img-container">
-      <img alt={props.name} src={props.img} id={props.id} onClick={() => props.imageClicked(props.id)}/>
+      <img alt={props.name} src={proccess.env.PUBLIC_URL ?  proccess.env.PUBLIC_URL + "/" + props.img : props.img} id={props.id} onClick={() => props.imageClicked(props.id)}/>
     </div>
   </div>
 );
