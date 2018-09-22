@@ -7,6 +7,7 @@ import Jumbotron from "./components/Jumbotron";
 import img from "./image.json";
 import "./App.css";
 
+console.log("i'm here"+ process.env.PUBLIC_URL)
 class App extends Component {
   state = {
     img,
